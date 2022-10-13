@@ -16,9 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from usuario.views import UsuarioApiView
+from usuario.views import (
+    UsuarioApiView,
+    CadastrarUsuarioApiView
+)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/usuario/', UsuarioApiView.as_view())
+    path('api/v1/usuario/', UsuarioApiView.as_view()),
+    path('api/v1/usuario/post/', CadastrarUsuarioApiView.as_view())
 ]
