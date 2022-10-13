@@ -15,14 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from rest_framework import routers
 
-from usuario.views import (
-    UsuarioApiView,
-    CadastrarUsuarioApiView
-)
+from usuario.views import UserViewSet
+
+router = routers.SimpleRouter()
+router.register(r'api/v1/usuario', UserViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/usuario/', UsuarioApiView.as_view()),
-    path('api/v1/usuario/post/', CadastrarUsuarioApiView.as_view())
 ]
+
+urlpatterns += router.urls
