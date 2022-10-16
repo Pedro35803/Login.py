@@ -1,1 +1,113 @@
 @import url(config_global.css);
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.section {
+    width: 50%;
+    height: 100%;
+
+    display: grid;
+    place-items: center;
+}
+
+.section-primary {
+    background: #F7FAFC;
+}
+
+.section-content {
+    height: 500px;
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-secondary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Botões, Entradas */
+
+.button,
+.input {
+    width: 100%;
+    height: 50px;
+}
+
+.button {
+    color: #fff;
+    cursor: pointer;
+
+    font-weight: bold;
+    font-size: 16px;
+    
+    border: none;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-primary {
+    background: #04C35C;
+}
+
+.button-secondary {
+    background: #1A202C;
+}
+
+.button span {
+    position: relative;
+    top: 2px;
+}
+
+.button-icon {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.input {
+    font-size: 14px;
+    padding: 0 15px;
+
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+}
+
+.input-name {
+    font-size: 16px;
+    color: #1A202C;
+    margin-bottom: 10px;
+}
+
+/* Checkbox */
+
+.label-checkbox * {
+    display: inline-block;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+/* Texto */
+
+.before-title {
+    color: #1A202C;
+    font-family: var(--font-secondary);
+    font-size: 16px;
+}
+
+.title {
+    font-family: var(--font-secondary);
+    font-size: 26px;
+    color: #1A202C;
+}
