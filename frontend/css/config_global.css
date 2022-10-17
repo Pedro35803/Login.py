@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 :root {
+    --color-primary: #1A202C;
+    --color-secondary: #04C35C;
+    --color-link: #2B6CB0;
+    --color-border: #E8E8E8;
+
+    --white-primary: #fff;
+    --white-secondary: #F7FAFC;
+
     --font-primary: 'Lato', sans-serif;
     --font-secondary: 'Merriweather', serif;
 }
@@ -13,6 +21,11 @@
     box-sizing: border-box;
 }
 
+*::selection {
+    background: var(--color-secondary);
+}
+
 body {
     font-family: var(--font-primary);
+    color: var(--color-primary);
 }
