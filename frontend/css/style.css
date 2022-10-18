@@ -9,7 +9,7 @@
 .section {
     width: 50%;
     height: 100%;
-    padding: 25px;    
+    padding: 25px;
 
     display: grid;
     place-items: center;
@@ -47,7 +47,7 @@
     cursor: pointer;
 
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.6rem;
     
     border: none;
     border-radius: 5px;
@@ -77,7 +77,7 @@
 }
 
 .input {
-    font-size: 14px;
+    font-size: 1.4rem;
     padding: 0 15px;
 
     border: 1px solid var(--color-border);
@@ -93,7 +93,7 @@
 }
 
 .input-name {
-    font-size: 16px;
+    font-size: 1.6rem;
     margin: 10px 0;
 }
 
@@ -101,10 +101,6 @@
 
 .label-checkbox {
     cursor: pointer;
-}
-
-.label-checkbox * {
-    display: inline-block;
 }
 
 .checkbox {
@@ -129,18 +125,24 @@
 
 /* Texto */
 
+.label-checkbox,
+.before-title,
+.next-page,
+.link {
+    font-size: 1.6rem;
+}
+
 .before-title,
 .title {
     font-family: var(--font-secondary);
 }
 
 .before-title {
-    font-size: 16px;
     margin-bottom: 8px;
 }
 
 .title {
-    font-size: 26px;
+    font-size: 2.6rem;
     margin-bottom: 35px;
 }
 
@@ -150,6 +152,8 @@
     cursor: pointer;
 }
 
+
+
 @media (max-width: 725px) {
     .section-primary {
         display: none;
@@ -157,5 +161,23 @@
 
     .section {
         width: 100%;
+    }
+
+    .button-secondary {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 350px) {
+    html {
+        font-size: 8px;
+    }
+
+    .button {
+        font-size: 1.7rem;
+    }
+
+    .next-page {
+        padding-bottom: 15px;
     }
 }

@@ -26,6 +26,10 @@
     color: var(--white-secondary);
 }
 
+html {
+    font-size: 10px;
+}
+
 body {
     font-family: var(--font-primary);
     color: var(--color-primary);
