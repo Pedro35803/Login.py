@@ -38,7 +38,7 @@
 
 .button,
 .input {
-    height: 50px;
+    height: 5.0rem;
     width: 100%;
 }
 
@@ -152,7 +152,15 @@
     cursor: pointer;
 }
 
+@media (min-width: 1920px) {
+    html {
+        font-size: 13px;
+    }
 
+    .section-content {
+        width: min(100%, 450px);
+    }
+}
 
 @media (max-width: 725px) {
     .section-primary {
@@ -172,12 +180,17 @@
     html {
         font-size: 8px;
     }
+}
 
-    .button {
-        font-size: 1.7rem;
+@media (min-height: 963px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .next-page {
-        padding-bottom: 15px;
+        margin-top: 50px;
     }
 }
