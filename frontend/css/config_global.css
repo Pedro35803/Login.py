@@ -23,6 +23,7 @@
 
 *::selection {
     background: var(--color-secondary);
+    color: var(--white-secondary);
 }
 
 body {
