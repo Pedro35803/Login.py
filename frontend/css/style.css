@@ -90,6 +90,7 @@
 
 .input::selection {
     background: var(--color-border);
+    color: var(--color-link)
 }
 
 .input-name {
@@ -99,7 +100,8 @@
 
 /* Checkbox */
 
-.label-checkbox {
+.label-checkbox,
+.checkbox {
     cursor: pointer;
 }
 
@@ -151,6 +153,8 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+/* Responsividade */
 
 @media (min-width: 1920px) {
     html {
