@@ -1,15 +1,8 @@
-# Codelandia - Iure Code
-## Desafio 04 - Login
+# Sistema de Login usando Django
 
-Link do Site: https://Pedro35803.github.io/Codelandia_Desafio-04
+## Como rodar a aplicação?
 
-Link do desafio (Figma): [Clique aqui](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?node-id=4261%3A2)
-
-Link de convite para a comunidade Codelândia (Discord): [https://discord.gg/wNCWTVuxyz](https://discord.gg/wNCWTVuxyz "https://discord.gg/wNCWTVuxyz")
-
-## Modificações feitas
-
-Decidi fazer além do que planejado para o desafio, então criei o backend e o sistema de cadastro, além da tela do usuario e coloquei o login com google.
+[Irei adicionar o passo a passo em breve]
 
 ## Tecnologias Usadas
 
