@@ -19,12 +19,12 @@
     background: var(--white-secondary);
 }
 
-.img {
-    width: min(100%, 400px);
-}
-
 .section-content {
     width: min(100%, 350px);
+}
+
+.content-registration {
+    width: min(100%, 450px);
 }
 
 .section-secondary {
@@ -32,6 +32,24 @@
     justify-content: space-between;
     align-items: center;
     margin: 25px 0;
+}
+
+.flex {
+    display: flex;
+    gap: 20px;
+}
+
+.img {
+    width: min(100%, 400px);
+}
+
+.img-svg {
+    margin-right: 7px;
+    height: 15px;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Botões, Entradas */
@@ -86,6 +104,13 @@
 .input::selection {
     background: var(--color-border);
     color: var(--color-link)
+}
+
+.input-area {
+    resize: none;
+    padding: 5px 15px;
+    height: 7.5rem;
+    margin-bottom: 25px;
 }
 
 .input-name {
@@ -182,13 +207,6 @@
 }
 
 @media (min-height: 963px) {
-    .section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
     .next-page {
         margin-top: 50px;
     }
