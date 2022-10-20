@@ -66,11 +66,6 @@
     background: var(--color-primary);
 }
 
-.button span {
-    position: relative;
-    top: 2px;
-}
-
 .button-icon {
     height: 20px;
     margin-right: 10px;

@@ -1,19 +1,21 @@
 const button = document.querySelector("#button-login");
+const form = document.querySelector("#form")
 
-const url = "localhost:8000/api";
+const url = "http://localhost:8000/api";
 const urlUsuarios = url + "/v1/usuarios";
 
-button.addEventListener("click", () => {
-    const email = document.querySelector("#email-login").value;
-    const senha = document.querySelector("#senha-login").value;
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    
+    const email = form.querySelector("#email-login").value;
+    const senha = form.querySelector("#senha-login").value;
 
     // const senhaCriptografada = criptografarSenha(senha)
     // const dadosLogin = analisarLogin(email, senhaCriptografada)
-    const dadosLogin = analisarLogin(email, senha)
 })
 
 async function dadosLogin (email, senha) {
-    const token = acessandoToken();
+    const token = await acessandoToken();
 
     const config = {
 		method: "POST",
