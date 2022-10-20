@@ -80,9 +80,17 @@
     background: var(--color-secondary);
 }
 
+.button-primary:hover {
+    filter: brightness(1.08);
+}
+
 .button-secondary {
     margin-top: 15px;
     background: var(--color-primary);
+}
+
+.button-secondary:hover {
+    filter: brightness(1.2) opacity(0.97);
 }
 
 .button-icon {
@@ -173,6 +181,10 @@
     color: var(--color-link);
     text-decoration: none;
     cursor: pointer;
+}
+
+.link:hover {
+    color: var(--color-secondary);
 }
 
 /* Animação de troca entre section Login e Cadastro */
