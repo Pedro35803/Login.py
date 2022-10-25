@@ -1,7 +1,9 @@
+import secret from './secret.js'
+
 function criptografar(dados) {
 	let j = 0;
 	let mensx = "";
-	let ch = "assbdFbdpdPdpfPdAAdpeoseslsQQEcDDldiVVkadiedkdkLLnm";
+	let ch = secret.key_cript;
 
 	for (let i = 0; i < dados.length; i++){
 		j++;
@@ -23,7 +25,7 @@ function criptografar(dados) {
 function descriptografar(dados) {
 	let j = 0;
 	let mensx = "";
-	let ch = "assbdFbdpdPdpfPdAAdpeoseslsQQEcDDldiVVkadiedkdkLLnm";
+	let ch = secret.key_cript;
 
 	for (let i = 0; i < dados.length; i++){
 		j++;

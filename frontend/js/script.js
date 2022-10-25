@@ -1,4 +1,5 @@
 import { criptografar } from './encrypted.js'
+import secret from './secret.js'
 
 const formRegistration = document.querySelector("#form-registration");
 const formLogin = document.querySelector("#form-login");
@@ -37,8 +38,8 @@ async function acessandoToken() {
 			"Content-Type": "application/json",
 		},
         body: JSON.stringify({
-            "username": "Cliente",
-            "password": "Cliente555"
+            "username": secret.token_user,
+            "password": secret.token_pass
         })
 	};
 
