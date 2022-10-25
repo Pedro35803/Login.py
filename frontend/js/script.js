@@ -1,6 +1,7 @@
+import { criptografar } from './encrypted.js'
+
 const formRegistration = document.querySelector("#form-registration");
 const formLogin = document.querySelector("#form-login");
-const button = document.querySelector("#button-login");
 
 const url = "http://localhost:8000/api";
 const urlUsuarios = url + "/v1/usuario";
@@ -11,7 +12,7 @@ formLogin.addEventListener("submit", (event) => {
     const email = formLogin.querySelector("#email-login").value;
     const senha = formLogin.querySelector("#senha-login").value;
 
-    // const senhaCriptografada = criptografarSenha(senha)
+    const senhaCriptografada = criptografar(senha)
     // const dadosLogin = analisarLogin(email, senhaCriptografada)
 })
 
@@ -19,9 +20,11 @@ formRegistration.addEventListener("submit", async (event) => {
     event.preventDefault();
     
     const email = formRegistration.querySelector("#email-cadastro").value;
-    const senha = formRegistration.querySelector("#senha-cadastro").value;
+    const senhaPura = formRegistration.querySelector("#senha-cadastro").value;
     const nome = formRegistration.querySelector("#nome-cadastro").value;
     const descricao = formRegistration.querySelector("#descricao-cadastro").value;
+
+    const senha = criptografar(senhaPura)
 
     const retorno = await cadastrarUsuario(email, senha, nome, descricao);
     console.log(retorno)
